@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5A58B74-694C-4EBD-BB22-7EADFB0CE6C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BooSpec</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>BooSpec</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <ducky>false</ducky>
+    <culture />
+    <genwarnings>false</genwarnings>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <ducky>false</ducky>
+    <culture />
+    <genwarnings>false</genwarnings>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BooleanShould.boo" />
+    <Compile Include="CollectionShould.boo" />
+    <Compile Include="DoubleShould.boo" />
+    <Compile Include="FixtureMacro.boo" />
+    <Compile Include="GenericShould.boo" />
+    <Compile Include="IntShould.boo" />
+    <Compile Include="LongShould.boo" />
+    <Compile Include="ReferenceBeWrapper.boo" />
+    <Compile Include="ReferenceShould.boo" />
+    <Compile Include="ReturningMacro.boo" />
+    <Compile Include="ShouldBeWithin.boo" />
+    <Compile Include="ShouldMatcher.boo" />
+    <Compile Include="SingleShould.boo" />
+    <Compile Include="StringShould.boo" />
+  </ItemGroup>
+</Project>

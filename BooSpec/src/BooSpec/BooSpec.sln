@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "BooSpec", "BooSpec.booproj", "{F5A58B74-694C-4EBD-BB22-7EADFB0CE6C6}"
+EndProject
+Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "BooSpec.Tests", "..\BooSpec.Tests\BooSpec.Tests.booproj", "{AC6BBE6D-F520-4DBE-AE9B-B6AEB356271E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC6BBE6D-F520-4DBE-AE9B-B6AEB356271E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6BBE6D-F520-4DBE-AE9B-B6AEB356271E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6BBE6D-F520-4DBE-AE9B-B6AEB356271E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6BBE6D-F520-4DBE-AE9B-B6AEB356271E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A58B74-694C-4EBD-BB22-7EADFB0CE6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A58B74-694C-4EBD-BB22-7EADFB0CE6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A58B74-694C-4EBD-BB22-7EADFB0CE6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A58B74-694C-4EBD-BB22-7EADFB0CE6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = BooSpec.booproj
+	EndGlobalSection
+EndGlobal
