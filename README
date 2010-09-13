@@ -1,0 +1,85 @@
+Boospec is a set of extensions for the Boo language that make working with NUnit a little more natural.
+
+The inspiration for the DSL comes from ScalaTest.
+
+The are two main areas, a set of macros that simplify the creation of Fixture Classes, so:
+
+[TestFixture, Description("This is a simple fixture")]
+class SimpleFixture(AssertionHelper):
+	
+	[Test, Description("Simple Test should pass")]
+	def SimpleTest():
+		pass
+	
+Can be written as:
+
+fixture "This is a simple fixture":
+	
+	testing "Simple test should pass":
+		pass
+		
+
+The second area of simplifications are in the tests themselves:
+
+Instead of using the Assert methods of NUnit, we can write code like this:
+
+SomeVariable.Should.Be == OtherVariable
+SomeInteger.Should.Be > OtherInteger
+SomeCollection.Should.Have.Length == AnInteger
+
+------------------------
+
+Here a more complex sample usage, from Boospec Unit Tests:
+
+namespace Boospec.Tests
+
+import Boospec
+import Boospec.ShouldMatcher
+
+fixture "Collection Should":
+
+	testing "Should implement reference equality":
+		first = [1,2]
+		second = [1,2]
+		
+		first.Should.Be.SameAs(first)
+		
+		expect "NUnit.Framework.AssertionException":
+			first.Should.Be.SameAs(second)
+
+	testing "Should implement deep equality":
+		first = [1,2]
+		second = [1,2]
+		third = [2,1]
+		
+		first.Should.Be == second
+		first.Should.Be != third
+		
+		expect "NUnit.Framework.AssertionException":
+			first.Should.Be != first
+		
+		expect "NUnit.Framework.AssertionException":
+			first.Should.Be == third
+
+	testing "Should test length/size/count property for Boo.List":
+		l = List[of string]()
+		
+		l.Should.Have.Length == 0
+		l.Should.Have.Size == 0
+		l.Should.Have.Count == 0
+		
+		l.Add("a string")
+
+		l.Should.Have.Length == 1
+		l.Should.Have.Size == 1
+		l.Should.Have.Count == 1
+
+------------------------
+
+There are some things that need to be done.
+
+- Better use of NUnit Assert methods, so we can show the right stack for the failure point.
+- Better separation, so that we can use the ShouldMatcher extensions with NUnit classes.
+- Fix some problems with declarations of members in the NUnit generated class.
+
+This is it for now.
