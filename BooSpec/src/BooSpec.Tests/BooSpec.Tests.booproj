@@ -1,1 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  <PropertyGroup>    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>    <ProductVersion>9.0.21022</ProductVersion>    <SchemaVersion>2.0</SchemaVersion>    <ProjectGuid>{AC6BBE6D-F520-4DBE-AE9B-B6AEB356271E}</ProjectGuid>    <OutputType>Library</OutputType>    <RootNamespace>BooSpec.Tests</RootNamespace>    <UsePartialTypes>false</UsePartialTypes>    <AssemblyName>BooSpec.Tests</AssemblyName>    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>  </PropertyGroup>  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">    <DebugSymbols>true</DebugSymbols>    <DebugType>full</DebugType>    <OutputPath>bin\Debug</OutputPath>    <ErrorReport>prompt</ErrorReport>    <ducky>false</ducky>    <culture />    <genwarnings>false</genwarnings>    <ConsolePause>false</ConsolePause>  </PropertyGroup>  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">    <DebugType>none</DebugType>    <OutputPath>bin\Release</OutputPath>    <ErrorReport>prompt</ErrorReport>    <ducky>false</ducky>    <culture />    <genwarnings>false</genwarnings>    <ConsolePause>false</ConsolePause>  </PropertyGroup>  <ItemGroup>    <Reference Include="System" />  </ItemGroup>  <ItemGroup>    <Compile Include="BooleanShouldTest.boo" />    <Compile Include="CollectionShouldTest.boo" />    <Compile Include="DoubleShouldTest.boo" />    <Compile Include="GenericShouldTest.boo" />    <Compile Include="IntShouldTest.boo" />    <Compile Include="LongShouldTest.boo" />    <Compile Include="ReferenceShouldTest.boo" />    <Compile Include="ReturningMacroTest.boo" />    <Compile Include="ShouldBeWithinTest.boo" />    <Compile Include="ShouldExtensionTest.boo" />    <Compile Include="SingleShouldTest.boo" />    <Compile Include="StringShouldTest.boo" />  </ItemGroup>  <ItemGroup>    <ProjectReference Include="..\BooSpec\BooSpec.booproj">      <Project>{F5A58B74-694C-4EBD-BB22-7EADFB0CE6C6}</Project>      <Name>BooSpec</Name>    </ProjectReference>  </ItemGroup></Project>
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC6BBE6D-F520-4DBE-AE9B-B6AEB356271E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BooSpec.Tests</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>BooSpec.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <ducky>false</ducky>
+    <culture />
+    <genwarnings>false</genwarnings>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <ducky>false</ducky>
+    <culture />
+    <genwarnings>false</genwarnings>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BooleanShouldTest.boo" />
+    <Compile Include="CollectionShouldTest.boo" />
+    <Compile Include="DoubleShouldTest.boo" />
+    <Compile Include="GenericShouldTest.boo" />
+    <Compile Include="IntShouldTest.boo" />
+    <Compile Include="LongShouldTest.boo" />
+    <Compile Include="ReferenceShouldTest.boo" />
+    <Compile Include="ReturningMacroTest.boo" />
+    <Compile Include="ShouldBeWithinTest.boo" />
+    <Compile Include="ShouldExtensionTest.boo" />
+    <Compile Include="SingleShouldTest.boo" />
+    <Compile Include="StringShouldTest.boo" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BooSpec\BooSpec.booproj">
+      <Project>{F5A58B74-694C-4EBD-BB22-7EADFB0CE6C6}</Project>
+      <Name>BooSpec</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

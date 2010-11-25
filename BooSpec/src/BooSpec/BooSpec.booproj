@@ -49,5 +49,8 @@
     <Compile Include="ShouldMatcher.boo" />
     <Compile Include="SingleShould.boo" />
     <Compile Include="StringShould.boo" />
+    <Compile Include="NotBeWrapper.boo" />
+    <Compile Include="ReferenceNotBeWrapper.boo" />
+    <Compile Include="AssemblyInfo.boo" />
   </ItemGroup>
 </Project>

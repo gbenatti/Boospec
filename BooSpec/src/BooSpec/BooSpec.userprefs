@@ -1,0 +1,41 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AssemblyInfo.boo">
+    <Files>
+      <File FileName="ShouldMatcher.boo" Line="1" Column="1" />
+      <File FileName="ReferenceShould.boo" Line="10" Column="1" />
+      <File FileName="ReferenceBeWrapper.boo" Line="34" Column="1" />
+      <File FileName="../BooSpec.Tests/ReferenceShouldTest.boo" Line="9" Column="1" />
+      <File FileName="NotBeWrapper.boo" Line="11" Column="19" />
+      <File FileName="ReferenceNotBeWrapper.boo" Line="24" Column="25" />
+      <File FileName="AssemblyInfo.boo" Line="15" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State selected="True" />
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True">
+          <Node name="BooSpec.Tests" expanded="True" selected="True">
+            <Node name="Boospec" expanded="True">
+              <Node name="Tests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
